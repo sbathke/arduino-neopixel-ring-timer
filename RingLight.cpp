@@ -38,7 +38,7 @@ void RingLight::fill(uint32_t c) {
 
 void RingLight::startCountDown(uint16_t timeInSec) {
   off();
-  _counterEndTime = millis() + timeInSec * 500;
+  _counterEndTime = millis() + timeInSec * 1000;
   fill(strip.Color(255, 0, 0));
 }
 
