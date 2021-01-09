@@ -9,16 +9,14 @@ class RingLight
   	RingLight();
   	RingLight(uint8_t pin);
     RingLight(uint8_t pin, uint8_t brightness);
-    void startCountDown(uint16_t time);
-    void run();
-    void stop();
-    void blink();
-    void blink(uint32_t c, uint16_t howLongInMillis);
-    void off();
-    void fill(uint32_t c);  
+    void RingLight::startCountDown(uint16_t timeInSec);
+    void RingLight::stopCountDown(); 
+    void RingLight::operate();
+    void RingLight::setUp(uint8_t pin, uint8_t brightness);
   private:
-  	void setUp(uint8_t pin, uint8_t brightness);
-    void setColorClockwise(uint32_t c, uint8_t numberOfLeds); 
+  	void RingLight::blink(uint32_t c);
+    void RingLight::setColorClockwise(uint32_t c, uint8_t numberOfLeds);
+    void RingLight::drawLedRing();
 };
 
 #endif
