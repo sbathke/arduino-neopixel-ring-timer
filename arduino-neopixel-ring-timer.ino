@@ -11,11 +11,10 @@ extern RingLight ringLight;
 
 void setup() {
   ringLight = RingLight(RING_LED_PIN);
-  //RingLight ringLight(RING_LED_PIN);
-  ringLight.stop();
+  
   ringLight.startCountDown(10);
 }
  
 void loop() {
-  ringLight.run();
+  ringLight.operate();
 }
