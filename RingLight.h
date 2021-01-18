@@ -17,6 +17,8 @@ class RingLight
     void RingLight::setColorClockwise(uint32_t c, uint8_t numberOfLeds);
     void RingLight::drawLedRing();  
     void RingLight::setUp(uint8_t pin, uint8_t brightness);
+    void RingLight::off();
+    void RingLight::fill(uint32_t c);
 };
 
 #endif
