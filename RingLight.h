@@ -12,13 +12,14 @@ class RingLight
     void startCountDown(uint16_t timeInSec);
     void stopCountDown(); 
     void operate();
-  private:
-    void blink(uint32_t c);
-    void setColorClockwise(uint32_t c, uint8_t numberOfLeds);
-    void drawLedRing();  
-    void setUp(uint8_t pin, uint8_t brightness);
+  
     void off();
     void fill(uint32_t c);
+    void setColorClockwise(uint32_t c, uint8_t numberOfLeds);
+    void setUp(uint8_t pin, uint8_t brightness);
+  private:
+    void blink(uint32_t c);
+    void drawLedRing();  
 };
 
 #endif
